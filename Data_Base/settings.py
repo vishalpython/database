@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'Data_Base.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'insta',
+        'USER':'root',
+        'PASSWORD':'vishal',
+        'HOST':'127.0.0.1',
+        'PORT':3306
+
     }
 }
 
